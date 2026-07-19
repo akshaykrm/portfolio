@@ -78,7 +78,7 @@ export default function App() {
       </header>
 
       {/* Main Container */}
-      <main className="max-w-4xl mx-auto px-6 py-12 space-y-16 sm:space-y-24">
+      <main className="max-w-4xl mx-auto px-6 py-4 space-y-4 sm:space-y-6">
         {/* HERO / ABOUT SECTION */}
         <section id="about-section" className="pt-4 scroll-mt-20">
           <div className="flex flex-col md:flex-row gap-10 md:gap-12 items-start">
@@ -123,7 +123,6 @@ export default function App() {
         </section>
 
         {/* SERVICES SECTION */}
-        <hr className="border-sand-200 dark:border-sand-900" />
         <div id="services-anchor" className="scroll-mt-20">
           <ServicesSection services={portfolioData.services} />
         </div>
@@ -135,14 +134,13 @@ export default function App() {
         </div> */}
 
         {/* CONTACT SECTION */}
-        <hr className="border-sand-200 dark:border-sand-900" />
         <div id="contact-anchor" className="scroll-mt-20">
           <ContactSection contact={portfolioData.contact} />
         </div>
       </main>
 
       {/* FOOTER */}
-      <footer className="border-t border-sand-200/60 dark:border-sand-900/60 bg-sand-50/50 dark:bg-sand-950/25 py-12 transition-colors duration-300 mt-16 text-sand-500 dark:text-sand-400">
+      <footer className="border-t border-sand-200/60 dark:border-sand-900/60 bg-sand-50/50 dark:bg-sand-950/25 py-6 transition-colors duration-300 mt-4 text-sand-500 dark:text-sand-400">
         <div className="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
           
           <div className="flex flex-col items-center md:items-start gap-1">
