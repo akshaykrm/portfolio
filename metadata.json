@@ -1,0 +1,6 @@
+{
+  "name": "Personal Portfolio",
+  "description": "A minimal personal portfolio and blog built with React, Vite, and Tailwind CSS, featuring Markdown rendering and theme switching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
