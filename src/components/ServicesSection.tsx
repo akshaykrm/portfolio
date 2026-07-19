@@ -27,7 +27,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
         <span className="text-xs font-mono px-2.5 py-1 rounded bg-[#e7e5e4] dark:bg-sand-800 text-sand-700 dark:text-sand-300 font-semibold uppercase tracking-wider">
           Offerings
         </span>
-        <h2 className="text-2xl sm:text-3xl font-serif font-bold text-sand-900 dark:text-sand-50">
+        <h2 className="text-2xl sm:text-3xl font-mono font-bold text-sand-900 dark:text-sand-50">
           Services Provided
         </h2>
       </div>

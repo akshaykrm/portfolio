@@ -69,7 +69,7 @@ export function BlogSection({ posts }: BlogSectionProps) {
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl font-serif font-bold text-sand-950 dark:text-sand-50 tracking-tight leading-tight mb-4">
+          <h1 className="text-3xl sm:text-4xl font-mono font-bold text-sand-950 dark:text-sand-50 tracking-tight leading-tight mb-4">
             {selectedPost.title}
           </h1>
 
@@ -113,7 +113,7 @@ export function BlogSection({ posts }: BlogSectionProps) {
         <span className="text-xs font-mono px-2.5 py-1 rounded bg-[#e7e5e4] dark:bg-sand-800 text-sand-700 dark:text-sand-300 font-semibold uppercase tracking-wider">
           Writings
         </span>
-        <h2 className="text-2xl sm:text-3xl font-serif font-bold text-sand-900 dark:text-sand-50">
+        <h2 className="text-2xl sm:text-3xl font-mono font-bold text-sand-900 dark:text-sand-50">
           Personal Blog
         </h2>
       </div>
@@ -198,7 +198,7 @@ export function BlogSection({ posts }: BlogSectionProps) {
                   </span>
                 </div>
 
-                <h3 className="text-lg font-serif font-bold text-sand-900 dark:text-sand-50 group-hover:text-amber-500 dark:group-hover:text-amber-400 transition-colors leading-snug mb-2">
+                <h3 className="text-lg font-mono font-bold text-sand-900 dark:text-sand-50 group-hover:text-amber-500 dark:group-hover:text-amber-400 transition-colors leading-snug mb-2">
                   {post.title}
                 </h3>
 

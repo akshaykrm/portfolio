@@ -41,7 +41,7 @@ export function ContactSection({ contact }: ContactSectionProps) {
         <span className="text-xs font-mono px-2.5 py-1 rounded bg-[#e7e5e4] dark:bg-sand-800 text-sand-700 dark:text-sand-300 font-semibold uppercase tracking-wider">
           Connection
         </span>
-        <h2 className="text-2xl sm:text-3xl font-serif font-bold text-sand-900 dark:text-sand-50">
+        <h2 className="text-2xl sm:text-3xl font-mono font-bold text-sand-900 dark:text-sand-50">
           Get in Touch
         </h2>
       </div>
@@ -125,7 +125,7 @@ export function ContactSection({ contact }: ContactSectionProps) {
             onSubmit={handleSendEmail}
             className="p-6 rounded-xl border border-sand-200 dark:border-sand-800 bg-white dark:bg-sand-900/50 space-y-4"
           >
-            <h3 className="text-base font-serif font-bold text-sand-900 dark:text-sand-50 mb-1">
+            <h3 className="text-base font-mono font-bold text-sand-900 dark:text-sand-50 mb-1">
               Compose Quick Message
             </h3>
             <p className="text-xs text-sand-400 dark:text-sand-500 mb-4">

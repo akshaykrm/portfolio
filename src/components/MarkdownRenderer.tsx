@@ -232,14 +232,14 @@ export function MarkdownRenderer({ markdown }: MarkdownRendererProps) {
           const children = parseInline(textContent);
           if (level === 1) {
             return (
-              <h1 key={key} className="text-2xl sm:text-3xl font-serif font-semibold text-sand-900 dark:text-sand-50 tracking-tight pt-4 pb-2 border-b border-sand-100 dark:border-sand-800/80">
+              <h1 key={key} className="text-2xl sm:text-3xl font-mono font-semibold text-sand-900 dark:text-sand-50 tracking-tight pt-4 pb-2 border-b border-sand-100 dark:border-sand-800/80">
                 {children}
               </h1>
             );
           }
           if (level === 2) {
             return (
-              <h2 key={key} className="text-xl sm:text-2xl font-serif font-semibold text-sand-900 dark:text-sand-50 tracking-tight pt-3 pb-1">
+              <h2 key={key} className="text-xl sm:text-2xl font-mono font-semibold text-sand-900 dark:text-sand-50 tracking-tight pt-3 pb-1">
                 {children}
               </h2>
             );

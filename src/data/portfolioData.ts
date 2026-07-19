@@ -208,7 +208,7 @@ Instead of squeezing content, use spacious padding and margins:
   <span className="text-xs font-mono tracking-widest uppercase text-amber-500">
     Introductory
   </span>
-  <h1 className="mt-3 text-4xl font-serif font-semibold text-zinc-900">
+  <h1 className="mt-3 text-4xl font-mono font-semibold text-zinc-900">
     Design with Intent
   </h1>
 </header>
@@ -220,7 +220,7 @@ Instead of squeezing content, use spacious padding and margins:
 
 A successful minimal design relies heavily on great typography. Using Tailwind's custom font families, create rhythmic hierarchies:
 
-- **Display headings**: Use a sophisticated serif font (\`font-serif\`) to add warmth, personality, and human texture.
+- **Display headings**: Use a sophisticated serif font (\`font-mono\`) to add warmth, personality, and human texture.
 - **Body copy**: Pair it with a highly readable, clean sans-serif (\`font-sans\`) like Inter for ultimate readability on screens of all sizes.
 - **Accents**: Use monospace (\`font-mono\`) in small sizes for dates, tags, and secondary indicators to provide a technical, structured feel.
 
