@@ -14,6 +14,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const isResetting = useRef(false);
+  const scrollTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const displayServices = [...services.slice(-CLONE_COUNT), ...services, ...services.slice(0, CLONE_COUNT)];
   const total = services.length;
@@ -91,6 +92,11 @@ export function ServicesSection({ services }: ServicesSectionProps) {
       const realIndex = getRealIndex(displayIndex);
       setActiveIndex(realIndex);
 
+      if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
+      scrollTimeout.current = setTimeout(() => {
+        resetAutoScroll();
+      }, 150);
+
       const lowerBound = (CLONE_COUNT - 1) * cardWidth;
       const upperBound = (CLONE_COUNT + total) * cardWidth;
 
@@ -108,7 +114,10 @@ export function ServicesSection({ services }: ServicesSectionProps) {
     };
 
     el.addEventListener("scroll", handleScroll, { passive: true });
-    return () => el.removeEventListener("scroll", handleScroll);
+    return () => {
+      el.removeEventListener("scroll", handleScroll);
+      if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
+    };
   }, [getCardWidth, getRealIndex, total]);
 
   useEffect(() => {
