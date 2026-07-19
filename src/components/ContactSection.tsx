@@ -113,7 +113,7 @@ export function ContactSection({ contact }: ContactSectionProps) {
             <div>
               <span className="block text-xs font-mono text-sand-400 uppercase tracking-wider">GitHub</span>
               <span className="text-sm font-medium text-sand-900 dark:text-sand-100 group-hover:text-amber-500 dark:group-hover:text-amber-400 transition-colors">
-                @akshaykm
+                @akshaykrm
               </span>
             </div>
           </a>
