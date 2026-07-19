@@ -3,7 +3,7 @@ import { portfolioData, initialBlogPosts } from "./data/portfolioData";
 import { DeveloperAvatar } from "./components/DeveloperAvatar";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { ServicesSection } from "./components/ServicesSection";
-import { BlogSection } from "./components/BlogSection";
+// import { BlogSection } from "./components/BlogSection";
 import { ContactSection } from "./components/ContactSection";
 import { MarkdownRenderer } from "./components/MarkdownRenderer";
 import { ArrowRight, BookOpen, Code, Mail, MessageSquare, Terminal } from "lucide-react";
@@ -53,14 +53,14 @@ export default function App() {
             >
               Services
             </button>
-            <button
+            {/* <button
               onClick={() => scrollToSection("blog-section")}
               className={`hover:text-amber-500 dark:hover:text-amber-400 transition-colors cursor-pointer ${
                 activeNav === "blog" ? "text-amber-500 font-semibold" : "text-sand-500 dark:text-sand-400"
               }`}
             >
               Blog
-            </button>
+            </button> */}
             <button
               onClick={() => scrollToSection("contact-section")}
               className={`hover:text-amber-500 dark:hover:text-amber-400 transition-colors cursor-pointer ${
@@ -109,13 +109,13 @@ export default function App() {
                   <span>Work With Me</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
-                <button
+                {/* <button
                   onClick={() => scrollToSection("blog-section")}
                   className="inline-flex items-center space-x-2 text-sm font-medium border border-sand-200 dark:border-sand-800 hover:bg-sand-100 dark:hover:bg-sand-900/50 px-4 py-2 rounded-lg transition-all cursor-pointer text-sand-600 dark:text-sand-300"
                 >
                   <BookOpen className="w-4 h-4 text-amber-500" />
                   <span>Read My Blog</span>
-                </button>
+                </button> */}
               </div>
             </div>
 
@@ -128,11 +128,11 @@ export default function App() {
           <ServicesSection services={portfolioData.services} />
         </div>
 
-        {/* BLOG SECTION */}
-        <hr className="border-sand-200 dark:border-sand-900" />
+        {/* BLOG SECTION - temporarily disabled */}
+        {/* <hr className="border-sand-200 dark:border-sand-900" />
         <div id="blog-anchor" className="scroll-mt-20">
           <BlogSection posts={initialBlogPosts} />
-        </div>
+        </div> */}
 
         {/* CONTACT SECTION */}
         <hr className="border-sand-200 dark:border-sand-900" />
