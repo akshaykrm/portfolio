@@ -22,8 +22,8 @@ export default function App() {
   return (
     <div className="min-h-screen bg-sand-50 dark:bg-sand-950 text-sand-800 dark:text-sand-200 font-sans transition-colors duration-300 antialiased selection:bg-amber-500/10 selection:text-amber-500">
       {/* Dynamic Background Noise/Texture Accent */}
-      <div className="fixed inset-0 pointer-events-none opacity-[0.015] dark:opacity-[0.025] bg-[radial-gradient(#808080_1px,transparent_1px)] [background-size:16px_16px] z-50" />
-      <div className="bg-grain" />
+      <div className="fixed inset-0 pointer-events-none opacity-[0.14] dark:opacity-[0.08] bg-[radial-gradient(#808080_1px,transparent_1px)] [background-size:16px_16px] z-50" />
+      <div className="bg-gradient-shift" />
 
       {/* Persistent Elegant Header Navigation */}
       <header className="sticky top-0 z-40 w-full border-b border-sand-200/60 dark:border-sand-900/60 bg-sand-50/80 dark:bg-sand-950/80 backdrop-blur-md transition-colors duration-300">

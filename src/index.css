@@ -21,23 +21,25 @@
   --color-sand-950: #0c0a09;
 }
 
-@keyframes grain {
-  0%, 100% { transform: translate(0, 0); }
-  10% { transform: translate(-5%, -10%); }
-  30% { transform: translate(3%, -15%); }
-  50% { transform: translate(12%, 9%); }
-  70% { transform: translate(9%, 4%); }
-  90% { transform: translate(-1%, 7%); }
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-.bg-grain::after {
+.bg-gradient-shift::before {
   content: "";
   position: fixed;
-  inset: -200%;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 128px 128px;
-  animation: grain 8s steps(10) infinite;
-  opacity: 0.07;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(245, 158, 11, 0.05),
+    rgba(217, 119, 6, 0.03),
+    rgba(251, 191, 36, 0.04),
+    rgba(245, 158, 11, 0.03)
+  );
+  background-size: 400% 400%;
+  animation: gradient-shift 20s ease infinite;
   pointer-events: none;
-  z-index: 50;
+  z-index: 49;
 }
