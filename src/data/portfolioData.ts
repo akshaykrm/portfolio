@@ -20,42 +20,81 @@ Feel free to explore my services below, read through some of my latest articles,
 `,
   services: [
     {
-      id: "freelance-dev",
-      title: "Freelance Web Applications",
-      description: "Custom, end-to-end web applications designed specifically to meet your unique business objectives.",
-      icon: "Code",
+      id: "cms-development",
+      title: "CMS Development",
+      description: "Custom CMS solutions designed to give you full control over your content without the complexity.",
+      icon: "Layout",
       price: "Custom Quote",
       features: [
-        "Interactive dashboard design",
-        "React state-management architecture",
-        "Durable backend/API integrations",
-        "Comprehensive QA & browser testing"
+        "Headless CMS architecture setup",
+        "WordPress & Strapi implementations",
+        "Custom content modeling",
+        "Intuitive admin dashboards"
       ]
     },
     {
-      id: "landing-pages",
-      title: "High-Converting Landing Pages",
-      description: "Sleek, responsive single-page websites designed to capture leads and turn visitors into enthusiastic clients.",
-      icon: "Sparkles",
+      id: "e-commerce",
+      title: "E-Commerce Solutions",
+      description: "Full-featured online stores built for conversion, performance, and seamless customer experiences.",
+      icon: "ShoppingCart",
+      price: "Custom Quote",
+      features: [
+        "Product catalog & inventory systems",
+        "Secure payment gateway integration",
+        "Order & shipping workflows",
+        "Conversion-optimized checkout"
+      ]
+    },
+    {
+      id: "personal-websites",
+      title: "Personal Websites",
+      description: "Minimal, high-impact personal brand websites that leave a lasting impression on every visitor.",
+      icon: "Globe",
       price: "Starting at $499",
       features: [
-        "Lightweight single-page setups",
-        "Optimized mobile-responsive layouts",
-        "Lead forms and newsletter integrations",
-        "SEO-ready semantic structures"
+        "Portfolio showcase design",
+        "Blog & content integration",
+        "SEO-optimized architecture",
+        "Lightning-fast load times"
       ]
     },
     {
-      id: "performance-optimization",
-      title: "Speed & SEO Consultation",
-      description: "Comprehensive audits and structural updates to make your existing website faster and rank better.",
-      icon: "Zap",
-      price: "Starting at $299",
+      id: "consultation",
+      title: "Consultation",
+      description: "Expert technical guidance to help you make the right decisions for your digital projects from day one.",
+      icon: "Lightbulb",
+      price: "Starting at $99/hr",
       features: [
-        "Core Web Vitals diagnostic checks",
-        "Image optimization & bundle analysis",
-        "Semantic HTML and meta tags audit",
-        "Actionable code-level performance reports"
+        "Tech stack selection & evaluation",
+        "Architecture & code review",
+        "Scalability & growth planning",
+        "Cost optimization strategies"
+      ]
+    },
+    {
+      id: "project-management",
+      title: "Project Management",
+      description: "End-to-end project oversight from concept to launch — so you can focus on your business, not the details.",
+      icon: "ClipboardList",
+      price: "Custom Quote",
+      features: [
+        "Timeline & milestone planning",
+        "Task tracking & reporting",
+        "Team coordination & communication",
+        "Risk management & delivery"
+      ]
+    },
+    {
+      id: "server-management",
+      title: "Server Management",
+      description: "Reliable server setup, monitoring, and maintenance to keep your infrastructure secure and performant.",
+      icon: "Server",
+      price: "Starting at $199/mo",
+      features: [
+        "Deployment pipeline setup",
+        "Performance monitoring & alerts",
+        "Security hardening & updates",
+        "Automated backups & recovery"
       ]
     }
   ],
