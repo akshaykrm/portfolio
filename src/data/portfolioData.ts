@@ -61,7 +61,7 @@ Feel free to explore my services below, read through some of my latest articles,
   ],
   contact: {
     email: "akshaykm@fastmail.com",
-    whatsapp: "https://wa.me/918547460918", // Standard Indian country code format (example, or standard link)
+    whatsapp: "https://wa.me/918921395637", // Standard Indian country code format (example, or standard link)
     github: "https://github.com/akshaykrm"
   }
 };
